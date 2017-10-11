@@ -24,10 +24,10 @@ Stall_Speed = V*2.23694 %MPH (Top speed between 2.5-3 X stall speed
 Max_Speed = Stall_Speed*3
 
 %% Thrust of Prop
-% d = 6;
-% pitch = 4.5;
-% 
-% cd = .05; %standard drag coefficient of a plane
-% F = (1+cd)*w;
-% RPMP = (F/(4.392399*10^-8)*((d^3.5)/(sqrt(pitch)))*((4.2333*10^-4)*pitch));
-% RPM = nthroot(RPMP,4)
+d = 6;
+pitch = 4.5;
+
+cd = .05; %standard drag coefficient of a plane
+F = (1+cd)*weight;
+RPMP = (F/(4.392399*10^-8)*((d^3.5)/(sqrt(pitch)))*((4.2333*10^-4)*pitch));
+RPM = nthroot(RPMP,4)
